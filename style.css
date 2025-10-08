@@ -1,0 +1,94 @@
+/* Basic styling for Chem Balance Web */
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f4f6fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body {
+  background-image: url("img/drugs-chemical-structures-chemistry-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* efek gelap lembut */
+  z-index: -1;
+}
+
+
+header {
+  text-align: center;
+  padding: 1.5em;
+  background-color: #4b6cb7;
+  background-image: linear-gradient(315deg, #092216 0%, #06180d 74%);
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+input {
+  padding: 0.6em 1em;
+  width: 250px;
+  border: 2px solid #052920;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #082c20;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: wheat;
+}
+
+.result-box {
+  background: #082c20;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  padding: 1em 1.5em;
+  min-width: 300px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #092216;
+  color: white;
+}
